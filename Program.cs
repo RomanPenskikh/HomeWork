@@ -10,3 +10,16 @@ void FillArray(string[] collection)
         collection[index] = Convert.ToString(Console.ReadLine());
     }
 }
+void PrintArray(string[] col)
+{
+    int count = col.Length;
+    for (int position = 0; position < count; position++)
+    {
+        if (col[position].Length <= 3)
+        {
+            Console.WriteLine($" " + col[position]);
+        }
+    }
+}
+FillArray(array);
+PrintArray(array);
